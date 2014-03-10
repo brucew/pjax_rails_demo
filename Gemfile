@@ -34,6 +34,8 @@ gem 'bootstrap-sass'
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 
+# pjax
+gem 'rack-pjax'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
