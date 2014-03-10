@@ -1,2 +1,2 @@
 jQuery ->
-  $(document).pjax('[data-pjax-container] a', '[data-pjax-container]')
+  $(document).pjax('#pjax-container a', '#pjax-container')
