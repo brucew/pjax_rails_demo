@@ -2,6 +2,8 @@
     <td> <%= player.team.city %> <%= player.team.name %> </td>
     <td>
       <%= link_to "#{player.given_name} #{player.surname}",
-                  season_players_path(params.merge(player_id: player.id)) %>
+                  season_players_path(params.merge(player_id: player.id)),
+                  data: {pjax_container: '#player_stats'},
+                  class: 'pjax' %>
     </td>
 <% end %>
