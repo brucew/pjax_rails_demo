@@ -1,2 +1,6 @@
 jQuery ->
-  $(document).pjax('#pjax-container a', '#pjax-container')
+  if $.support.pjax
+    $(document).on "click", "a.pjax", (event) ->
+      container = $(this).closest(".pjax-container")
+      $.pjax.click event,
+        container: container
