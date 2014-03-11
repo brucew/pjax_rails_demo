@@ -1,7 +1,15 @@
 <table class="player_stats table table-striped table-bordered table-hover">
   <tr>
+    <td>Name</td>
+    <td><%= @player.given_name %> <%= @player.surname %> </td>
+  </tr>
+  <tr>
     <td>Position</td>
     <td><%= @player.position %> </td>
+  </tr>
+  <tr>
+    <td>Team</td>
+    <td><%= @player.team.name %> </td>
   </tr>
   <tr>
     <td>HR</td>
