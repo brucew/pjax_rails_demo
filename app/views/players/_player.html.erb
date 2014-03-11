@@ -1,4 +1,7 @@
 <%= content_tag_for :tr, player do %>
     <td> <%= player.team.city %> <%= player.team.name %> </td>
-    <td> <%= player.given_name %> <%= player.surname %> </td>
+    <td>
+      <%= link_to "#{player.given_name} #{player.surname}",
+                  season_players_path(params.merge(player_id: player.id)) %>
+    </td>
 <% end %>
