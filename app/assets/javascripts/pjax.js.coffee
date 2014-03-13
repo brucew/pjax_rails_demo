@@ -1,5 +1,6 @@
 jQuery ->
   if $.support.pjax
+    $.pjax.defaults.scrollTo = false
     $(document).on "click", "a.pjax", (event) ->
       if container_selector = $(this).data('pjax-container')
         container = $(container_selector)
