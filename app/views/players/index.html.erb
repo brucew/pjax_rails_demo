@@ -12,14 +12,14 @@
 
     <%= paginate @players %>
 
-    Rendered at <%= Time.now.to_s %>
+    Rendered at <%= Time.now.seconds_since_midnight.to_i %>
 
   </div>
 
   <div id="player_stats" class="pjax-container span6">
     <%= render 'stats' if @player %>
 
-    Rendered at <%= Time.now.to_s %>
+    Rendered at <%= Time.now.seconds_since_midnight.to_i %>
 
   </div>
 
