@@ -1,5 +1,16 @@
 <h1><%= link_to @season.year + ' Players', season_players_path %></h1>
 
+<%= form_tag season_players_path(params), method: :get,
+             data: {pjax_container: '#player_list'},
+             class: 'pjax form-search' do %>
+    <%= text_field_tag(:search, @search,
+                       placeholder: 'Search Last Name',
+                       class: 'input-medium search-query') %>
+    <%= button_tag(type: 'submit', class: 'btn') do %>
+        <i class="icon-search"></i>
+    <% end %>
+<% end %>
+
 <div class="row">
   <div id="player_list" class="pjax-container span6">
     <table class="players table table-striped table-bordered table-hover">
