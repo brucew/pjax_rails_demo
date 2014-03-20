@@ -3,4 +3,4 @@ A Ruby on Rails application that demonstrates advanced pjax integration. Each
 step in building the application is a separate branch.
 
 This demo was presented at RubyAZ on March 18th, 2014. The presentation can be
-viewed here: {pjax+Rails presentation}[doc/pjax+Rails.pdf].
+found here: link:doc/pjax+Rails.pdf.
